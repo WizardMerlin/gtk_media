@@ -13,6 +13,10 @@
 #define SYSLOG_H
 
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdio.h>
 
 #define SYS_LOG_LEVEL_CLOSE 0
@@ -57,6 +61,12 @@
 #define LOGE(format,...) PRINT(format,##__VA_ARGS__)
 #else
 #define LOGE(format,...)
+#endif
+
+
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif // SYSLOG_H
