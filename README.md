@@ -72,11 +72,14 @@ http://blog.chinaunix.net/uid-28939088-id-3753567.html
 3. src(源文件)
 4. lib(库文件)
 5. bin(编译结果，可执行文件)
-6. config(配置文件)
+6. config(配置文件) ---not now
 7. README (说明文件),LICENSE(协议文件)
-8. Makefile, Makelist
-9. doc_res  (实际上是README的图片存放)
-10.  test (每写一个功能或者模块，就立马测试一下)
+8. Makefile, CMakeLists.txt (now we use cmake for building our system)
+9. doc  (if we have)
+10.test (每写一个功能或者模块，就立马测试一下)
+
+
+_when you build(using cmake), you'd better make a new dir build for out-source building._
 
 
 _各子目录下还有模块._
@@ -87,8 +90,10 @@ _各子目录下还有模块._
 (学过软件工程，或者工程学思想的人可以按照自己的想法去控制进度)
 
 
-###4. 遇到的问题
 
+###4. 遇到的问题
+1. build the system is so annoying. (I choose to use cmake for cross-plat form)
+2. 
 
 
 
