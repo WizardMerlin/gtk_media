@@ -18,6 +18,7 @@ extern "C" {
 #endif
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #define SYS_LOG_LEVEL_CLOSE 0
 #define SYS_LOG_LEVEL_ERROR 1

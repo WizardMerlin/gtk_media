@@ -1,17 +1,20 @@
-#include <stdio.h>
-#include "../include/log/syslog.h"
+#include "syslog.h"  //let cmake tell us the include_dir
+//#include "../include/log/syslog.h"
 
 
-/*log module: tag-----begin*/
+
 #undef SYS_LOG_TAG
 #define SYS_LOG_TAG "MAIN"
-/*log module: tag-----end*/
+
 
 
 int main(int argc, char *argv[]){
 
-  LOGD("debug\n");
+  LOGD("starting the program.\n");
 
-  LOGI("pass param %d\n",10);
+
+  LOGD("closing the program.\n");
+
+
   return 0;
 }
