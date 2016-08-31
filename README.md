@@ -75,7 +75,7 @@ http://blog.chinaunix.net/uid-28939088-id-3753567.html
 6. config(配置文件) ---not now
 7. README (说明文件),LICENSE(协议文件)
 8. Makefile, CMakeLists.txt (now we use cmake for building our system)
-9. doc  (if we have)
+9. doc  (if we have)---not now
 10.test (每写一个功能或者模块，就立马测试一下)
 
 
