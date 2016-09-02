@@ -2,6 +2,7 @@
  ============================================================================
  Name        : gtk_media
  Author      : merlin
+ Email       : wizardmerlin945@gmail.com
  Version     : 1.0
  Copyright   : LGPL
  Description : Module Log, Ansi-style(C99)
