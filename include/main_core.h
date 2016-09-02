@@ -21,12 +21,12 @@ extern "C" {
 
 #include "syslog.h"
   
-/*
- define operator directives
-*/
+  /*
+    define operator directives
+  */
 
 
-/*global_config_directives 1000*/
+  /*global_config_directives 1000*/
 
 #define GLOBAL_CONFIG_INIT_MEDIALIB 1001
 #define GLOBAL_CONFIG_INIT_PLAYLIST 1002
@@ -38,7 +38,7 @@ extern "C" {
 #define GLOBAL_CONFIG_MUTE_VOLUME   1031
 
 
-/*global_query_state_directives*/
+  /*global_query_state_directives*/
 
 #define GLOBAL_QUERY_STATE_WINDOWSIZE 2001
 
@@ -52,7 +52,7 @@ extern "C" {
 #define GLOBAL_QUERY_STATE_VOLUME 2041
 
 
-/*media_library_directives*/
+  /*media_library_directives*/
 
 #define MEDIA_LIBRARY_QUERY_LIBRARYINFO 3001
 #define MEDIA_LIBRARY_UPDATE_LIBRARYINFO 3002
@@ -66,14 +66,14 @@ extern "C" {
 
 #define MEDIA_LIBRARY_ADD_MEDIA 3031
 #define MEDIA_LIBRARY_ADD_DIR 3032
-/*search local media file and save it to library*/
+  /*search local media file and save it to library*/
 #define MEDIA_LIBRARY_ADD_LOCAL 3033
-/*add media from library to playlist */
+  /*add media from library to playlist */
 #define MEDIA_LIBRARY_EXPORT_MEDIA 3041
 
 
 
-/*play_list_directives*/
+  /*play_list_directives*/
 #define PLAY_LIST_QUERY_LISTINFO 4001
 #define PLAY_LIST_UPDATE_LISTINFO 4002
 
@@ -85,14 +85,14 @@ extern "C" {
 #define PLAY_LIST_CHOOSE_MEDIA 4031
 
 #define PLAY_LIST_SORT_MEDIA 4041
-/*#define PALY_LIST_SORT_LIST 4042*/
+  /*#define PALY_LIST_SORT_LIST 4042*/
 
 #define PLAY_LIST_OPEN_LIST 4051
 
 #define PLAY_LIST_SAVE_LIST 4061
 
 
-/*play_control_directives*/
+  /*play_control_directives*/
 #define PLAY_CONTROL_PLAY_MEDIA 5001
 #define PLAY_LIST_PAUSE_MEDIA 5002
 #define PLAY_LIST_STOP_MEDIA 5003
@@ -105,10 +105,17 @@ extern "C" {
 
 
 
-/* the main_core entry for control the whole program*/
-void *main_core(int cmd, void *data);
+  /* the main_core entry for control the whole program*/
+  void *main_core(int cmd, void *data);
 
 
+  /*
+    int general_sleep(void);
+    int general_play_mode(int *mode, InterFace *ui);
+    int general_volume(int volume);
+    int general_mute(int mute_switch);
+    void *request_volume(void);
+  */
 
 
 

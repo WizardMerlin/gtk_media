@@ -18,8 +18,10 @@ _practise c language and connect to my media work_
 3. gdb
 4. gtk3.0+
 5. glade
-6. GStreamer多媒体框架
-7. libid3tag提取媒体文件信息
+6. GStreamer(多媒体框架)
+7. libid3tag(提取媒体文件信息)
+8. Glib
+9. sqlite
 
 _之后用到再补充_
 

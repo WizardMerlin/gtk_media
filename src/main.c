@@ -1,6 +1,5 @@
-#include "syslog.h"  //let cmake tell us the include_dir
-//#include "../include/log/syslog.h"
-
+#include "syslog.h"  
+#include "main_core.h"
 
 
 #undef SYS_LOG_TAG
@@ -11,6 +10,11 @@
 int main(int argc, char *argv[]){
 
   LOGD("starting the program.\n");
+
+
+
+  main_core(GLOBAL_CONFIG_INIT_MEDIALIB, 0);
+  main_core(GLOBAL_CONFIG_INIT_PLAYLIST, 0);
 
 
   LOGD("closing the program.\n");

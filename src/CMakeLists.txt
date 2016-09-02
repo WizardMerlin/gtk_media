@@ -12,7 +12,7 @@ LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib)
 
 #set executable output path
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-add_executable(main main.c)
+add_executable(main main.c main_core.c)
 
 
 #for linking lib
